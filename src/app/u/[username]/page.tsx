@@ -118,7 +118,7 @@ export default function PublicProfilePage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-4 space-y-6">
+    <div className="min-h-screen bg-background flex flex-col items-center justify-center p-4 space-y-6">
       <Card className="w-full max-w-xl shadow-md bg-card rounded-2xl">
         <CardHeader className="text-center">
           <CardTitle className="text-2xl font-bold text-gray-800">
