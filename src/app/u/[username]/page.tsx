@@ -112,7 +112,7 @@ export default function PublicProfilePage() {
   if (isCheckingStatus) {
     return (
       <div className="flex justify-center items-center min-h-screen">
-        <Loader2 className="animate-spin h-8 w-8 text-gray-500" />
+        <Loader2 className="animate-spin h-8 w-8 text-muted-foreground" />
       </div>
     );
   }
@@ -121,7 +121,7 @@ export default function PublicProfilePage() {
     <div className="min-h-screen bg-background flex flex-col items-center justify-center p-4 space-y-6">
       <Card className="w-full max-w-xl shadow-md bg-card rounded-2xl">
         <CardHeader className="text-center">
-          <CardTitle className="text-2xl font-bold text-gray-800">
+          <CardTitle className="text-2xl font-bold text-muted-foreground">
             Send Anonymous Message to @{username}
           </CardTitle>
         </CardHeader>
@@ -131,7 +131,7 @@ export default function PublicProfilePage() {
               <p className="text-red-600 font-medium">
                 @{username} is not accepting messages right now.
               </p>
-              <p className="text-gray-500 text-sm mt-1">
+              <p className="text-muted-foreground text-sm mt-1">
                 Aap abhi inhe anonymous message nahi bhej sakte.
               </p>
             </div>
@@ -145,7 +145,7 @@ export default function PublicProfilePage() {
                 maxLength={400}
                 disabled={isLoading}
               />
-              <div className="text-right text-xs text-gray-400">
+              <div className="text-right text-xs text-muted-foreground">
                 {content.length}/400 characters
               </div>
               <Button
@@ -169,7 +169,7 @@ export default function PublicProfilePage() {
       {isAccepting && (
         <div className="w-full max-w-xl space-y-4">
           <div className="flex justify-between items-center px-1">
-            <h3 className="text-sm font-semibold text-gray-700 flex items-center gap-1">
+            <h3 className="text-sm font-semibold text-muted-foreground flex items-center gap-1">
               <Sparkles className="w-4 h-4 text-purple-500 fill-purple-500" />
               Select any message below to suggest:
             </h3>
