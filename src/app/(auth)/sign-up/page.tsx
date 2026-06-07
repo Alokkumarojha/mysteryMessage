@@ -182,7 +182,10 @@ function Page() {
 
         <div className="text-center text-sm text-gray-500 mt-4">
           Already have an account?{" "}
-          <Link href="/sign-in" className="text-blue-500 hover:underline">
+          <Link
+            href="https://mystery-message-git-main-alok-kumar-ojhas-projects.vercel.app/sign-in"
+            className="text-blue-500 hover:underline"
+          >
             Sign in
           </Link>
         </div>

@@ -15,7 +15,10 @@ function Navbar() {
   return (
     <nav className="border-b bg-background">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        <Link href="/" className="text-xl font-bold tracking-tight">
+        <Link
+          href="https://mystery-message-git-main-alok-kumar-ojhas-projects.vercel.app/"
+          className="text-xl font-bold tracking-tight"
+        >
           MysteryMessage
         </Link>
 
@@ -32,7 +35,7 @@ function Navbar() {
               </Button>
             </>
           ) : (
-            <Link href="/sign-in">
+            <Link href="https://mystery-message-git-main-alok-kumar-ojhas-projects.vercel.app/sign-in">
               <Button>Login</Button>
             </Link>
           )}

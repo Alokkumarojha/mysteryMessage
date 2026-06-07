@@ -18,6 +18,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { Link, Loader2 } from "lucide-react";
 
 function SignInPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -81,7 +82,7 @@ function SignInPage() {
                 name="identifier"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Username @ Email</FormLabel>
+                    <FormLabel>Username/Email</FormLabel>
                     <FormControl>
                       <Input placeholder="Username or Email" {...field} />
                     </FormControl>
@@ -108,10 +109,26 @@ function SignInPage() {
               />
 
               <Button type="submit" className="w-full" disabled={isSubmitting}>
-                {isSubmitting ? "Signing In..." : "Sign In"}
+                {isSubmitting ? (
+                  <>
+                    <Loader2 className="animate-spin mr-2 h-4 w-4" /> Please
+                    wait
+                  </>
+                ) : (
+                  "Sign Up"
+                )}
               </Button>
             </form>
           </Form>
+          <div className="text-center text-sm text-gray-500 mt-4">
+            Don't have an account?{" "}
+            <Link
+              href="https://mystery-message-git-main-alok-kumar-ojhas-projects.vercel.app/sign-up"
+              className="text-blue-500 hover:underline"
+            >
+              Sign up
+            </Link>
+          </div>
         </div>
       </div>
     </div>
