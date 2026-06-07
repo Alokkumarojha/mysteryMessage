@@ -18,7 +18,8 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Link, Loader2 } from "lucide-react";
+import { Loader2 } from "lucide-react";
+import Link from "next/link";
 
 function SignInPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -115,7 +116,7 @@ function SignInPage() {
                     wait
                   </>
                 ) : (
-                  "Sign Up"
+                  "Sign in"
                 )}
               </Button>
             </form>
